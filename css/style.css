@@ -23,6 +23,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.nav a:hover,
+.nav-main a:hover {
+    color: white;
+}
+
 /* MAIN */
 main {
     height: calc( 100% - 80px );
@@ -53,10 +58,6 @@ main {
     font-weight: 700;
 }
 
-/* nav:hover */
-.nav a:hover {
-    color: white;
-}
 
 /* logo */
 .logo {
@@ -170,8 +171,6 @@ main {
     vertical-align: middle;
 }
 
-
-
 /* Content */
 .main-content {
     width: calc( 100% - 200px);
@@ -183,12 +182,94 @@ main {
     padding-top: 70px;
 }
 
+/* nav-main */
+.nav-main {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-main li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav-main li a {
+    text-decoration: none;
+    color: #7d7f84;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-main li:first-child {
+    border-bottom: 2px solid #adff2f;
+    padding-bottom: 4px;
+}
+
 /* FOOTER */
 footer {
     height: 80px;
     background-color: #282828;
     color: #a3a3a3;
     overflow: hidden;
+    padding: 0 5px;
+}
+
+.footer-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* left */
+.in-playback{
+    display: flex;
+    align-items: center;
+}
+
+.in-playback img {
+    width: 50px;
+}
+
+.left h5 {
+    font-size: 11px;
+    color: white;
+    padding-left: 10px;
+}
+
+.left h5 div {
+    font-size: 10px;
+    color: #a3a3a3;
+    font-weight: 400;
+}
+
+.left h5 div:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.hearth {
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+
+.hearth a, 
+.folder a{
+    text-decoration: none;
+    color: #a3a3a3;
+    font-size: 11px;
+}
+
+.hearth a:hover, 
+.folder a:hover {
+    color: white;
+}
+
+/* center */
+.center {
+    flex-shrink: 1;
 }
 
 /* UPGRADE */
@@ -286,6 +367,11 @@ footer {
         width: calc( 100% - 50px );
     }
 
+    /* FOOTER */
+    
+
+
+    
     /* UPGRADE */
     #upgrade {
         width: calc( 100% - 50px );
