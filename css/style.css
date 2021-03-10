@@ -36,14 +36,14 @@ main {
 }
 
 /* Content */
-    .main-content {
-        width: calc( 100% - 200px);
-        float: left;
-        height: 100%;
-        background-color: #141922;
-        color: lightgray;
-        overflow-y: auto;
-    }
+.main-content {
+    width: calc( 100% - 200px);
+    float: left;
+    height: 100%;
+    background-color: #141922;
+    color: lightgray;
+    overflow-y: auto;
+}
 
 /* FOOTER */
 footer {
