@@ -7,7 +7,6 @@
 
 img {
     width: 100%;
-    display: block;
 }
 
 ul {
@@ -61,11 +60,16 @@ main {
 
 /* logo */
 .logo {
-    padding: 13px 0;
+    padding: 15px 0;
+}
+
+.xs-logo {
+    display: none;
 }
 
 .logo img{
-    width: 100px;
+    width: 120px;
+    display: block;
 }
 
 /* nav-link */
@@ -73,13 +77,17 @@ main {
     padding: 3px 0;
 }
 
-.nav-link li a i {
-    font-size: 17px;
-    padding-right: 7px;
+.nav-link a img {
+    width: 20px;
+    vertical-align: top;
 }
 
 .nav-link li .home {
     color: #d2d2d2;
+}
+
+.nav-link li span {
+    padding-left: 5px;
 }
 
 .nav-link ul li:first-child {
@@ -145,17 +153,22 @@ main {
     padding-bottom: 5px;
 }
 
-.app-account .account i {
-    font-size: 18px;
-    padding-right: 10px;
-}
-
 .app-account .account span {
     font-size: 13px;
     color: white;
     font-weight: 700;
 }
 
+.account .profile {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #606060;
+    background-color: #606060;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 
 
@@ -167,6 +180,7 @@ main {
     background-color: #141922;
     color: #a3a3a3;
     overflow-y: auto;
+    padding-top: 70px;
 }
 
 /* FOOTER */
@@ -175,4 +189,105 @@ footer {
     background-color: #282828;
     color: #a3a3a3;
     overflow: hidden;
+}
+
+/* UPGRADE */
+#upgrade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba( 0, 0, 0, 0.5);
+    height: 70px;
+    width: calc( 100% - 200px );
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 5px;
+}
+
+.button a {
+    width: 200px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 35px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.button a:hover {
+    padding: 13px 38px;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Nav */
+    .nav {
+        width: 50px;
+    }
+
+    /* logo */
+    .logo {
+        display: none;
+    }
+
+    .xs-logo {
+        display: block;
+        text-align: center;
+    }
+
+    .xs-logo img {
+        padding: 10px;
+    }
+
+    /* nav-link */
+    .nav-link {
+        flex-grow: 1;
+    }
+
+    .nav-link li img {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: auto;
+    }
+
+    .nav-link li a span {
+        display: none;
+    }
+    
+    /* playlist */
+    .playlist {
+        display: none;
+    }
+
+    /* app/accout */
+    .app-account span {
+        display: none;
+    }
+
+    .app-account .app {
+        border-bottom: none;
+        text-align: center;
+    }
+
+    .app-account .app i {
+        padding-right: 0;
+    }
+
+    .app-account .account {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    /* Content */
+    .main-content {
+        width: calc( 100% - 50px );
+    }
+
+    /* UPGRADE */
+    #upgrade {
+        width: calc( 100% - 50px );
+    }
 }
