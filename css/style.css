@@ -20,20 +20,144 @@ ul {
     height: 100vh;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* MAIN */
 main {
     height: calc( 100% - 80px );
 }
 
 /* Nav */
-.nav-bar {
+.nav {
     width: 200px;
     float: left;
     height: 100%;
     background-color: black;
-    color: lightgray;
+    color: #606060;
     overflow: hidden;
 }
+
+.box-nav {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #606060;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* nav:hover */
+.nav a:hover {
+    color: white;
+}
+
+/* logo */
+.logo {
+    padding: 13px 0;
+}
+
+.logo img{
+    width: 100px;
+}
+
+/* nav-link */
+.nav-link li {
+    padding: 3px 0;
+}
+
+.nav-link li a i {
+    font-size: 17px;
+    padding-right: 7px;
+}
+
+.nav-link li .home {
+    color: #d2d2d2;
+}
+
+.nav-link ul li:first-child {
+    border-left: 3px solid #adff2f;
+    margin-left: -15px;
+    padding-left: 12px;
+}
+
+
+/* playlist */
+.playlist {
+    padding-top: 15px;
+    overflow: hidden;
+    flex-grow: 1;
+    min-height: 150px;
+}
+
+.playlist h6 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.add-playlist a{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.add-playlist i {
+    padding: 6px 7px;
+    font-size: 16px;
+    background-color: #a3a3a3;
+    color: black;
+    margin-right: 5px;
+}
+
+.add-playlist i:hover {
+    background-color: white;
+}
+
+/* playlist-content */
+.playlist-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.playlist-content li {
+    padding: 5px 0;
+}
+
+/* app/account */
+.app-account .app i{
+    padding-right: 10px;
+}
+
+.app-account .app {
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
+.app-account .account {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.app-account .account i {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.app-account .account span {
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+}
+
+
+
 
 /* Content */
 .main-content {
@@ -41,7 +165,7 @@ main {
     float: left;
     height: 100%;
     background-color: #141922;
-    color: lightgray;
+    color: #a3a3a3;
     overflow-y: auto;
 }
 
@@ -49,6 +173,6 @@ main {
 footer {
     height: 80px;
     background-color: #282828;
-    color: lightgray;
+    color: #a3a3a3;
     overflow: hidden;
 }

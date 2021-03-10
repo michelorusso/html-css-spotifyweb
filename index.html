@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpotifyWeb</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -18,8 +21,110 @@
             <main>
                 
                 <!-- Nav -->
-                <nav class="nav-bar">
-                    nav
+                <nav class="nav">                    
+                    <div class="box-nav">
+                        
+                        <!-- logo -->
+                        <div class="logo">
+                            <a href="#">
+                                <img src="img/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <!-- end logo -->
+
+                        <!-- nav-link -->
+                        <div class="nav-link">
+                            <ul>
+
+                                <li>
+                                    <a  class="home" href="#"><i class="fas fa-home"></i>Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><i class="fas fa-search"></i>Cerca</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><i class="fas fa-book"></i>La tua libreria</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- end nav-link -->
+
+                        <!-- playlist -->
+                        <div class="playlist">
+
+                            <h6>Playlist</h6>
+
+                            <div class="add-playlist">
+                                <a href="#">
+                                    <i class="fas fa-plus"></i>Crea Playlist
+                                </a>
+                            </div>
+
+                            <!-- playlist-content -->
+                            <div class="playlist-content">
+
+                                <ul>
+
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Nome Playlist</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                            <!-- end playlist-content -->
+
+                        </div>
+                        <!-- end playlist -->
+
+                        <!-- app/account -->
+                        <div class="app-account">
+                            
+                            <div class="app">
+
+                                <a href="#">
+                                    <i class="far fa-arrow-alt-circle-down"></i> Installa app
+                                </a>
+
+                            </div>
+
+                            <div class="account">
+
+                                <i class="fas fa-user-circle"></i>
+                                <span>John Doe</span>
+                                
+                            </div>
+                        </div>
+                        <!-- end app/account -->
+
+                    </div>
                 </nav>
                 <!-- Nav -->
 
@@ -28,7 +133,7 @@
                     content
                 </section>
                 <!-- End Content -->
-                
+
             </main>
             <!-- END MAIN -->
     
