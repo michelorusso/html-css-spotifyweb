@@ -264,10 +264,12 @@ main {
     padding-top: 5px;
 }
 
-.create{
+.create, 
+.author{
     padding-top: 15px;
 }  
-.create p {
+.create p,
+.author p {
     font-size: 11px;
     padding-left: 10px;
     padding-top: 10px;
@@ -275,6 +277,14 @@ main {
 
 .create .music {
     width: calc( 100% / 4 );
+}
+
+.author .music-img img{
+    border-radius: 50%;
+}
+
+.author .overlay {
+    border-radius: 50%;
 }
 
 
@@ -534,7 +544,8 @@ footer {
   
     /* music-list */
     .music,
-    .create .music {
+    .create .music,
+    .author .music {
         width: calc( 100% / 2 );
     }
 
@@ -552,7 +563,8 @@ footer {
 
 @media (min-width: 553px) and (max-width: 768px) { 
     .music,
-    .create .music {
+    .create .music,
+    .author .music {
         width: calc( 100% / 2 );
     }
 }
