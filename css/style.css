@@ -331,9 +331,14 @@ footer {
     text-decoration: underline;
 }
 
-.hearth {
-    padding-left: 25px;
-    padding-right: 10px;
+.click {
+    padding-left: 15px;
+}
+
+.hearth,
+.folder {
+    display: inline-block;
+    padding: 3px;
 }
 
 .hearth a, 
@@ -392,7 +397,7 @@ footer {
     padding: 0 5px;
 }
 
-.bar {
+.time-bar {
     width: 350px;
     height: 4px;
     background-color: #6e6e70;
@@ -418,11 +423,11 @@ footer {
     display: none;
 }
 
-.bar:hover .bar-small {
+.time-bar:hover .bar-small {
     background-color: #adff2f;
 }
 
-.bar:hover .cursor {
+.time-bar:hover .cursor {
     display: block;
 } 
 /* right */
@@ -438,7 +443,7 @@ footer {
     font-size: 14px;
 }
 
-.right-content .bar {
+.right-content .time-bar {
     width: 100px;
 }
 
@@ -550,10 +555,15 @@ footer {
     }
 
     /* FOOTER */
-    .hearth {
+    .click {
+        padding-left: 5px;
+    }
+    
+    .hearth,
+    .folder {
+        display: block;
         padding: 0;
     }
-
     
     /* UPGRADE */
     #upgrade {
@@ -567,6 +577,13 @@ footer {
     .author .music {
         width: calc( 100% / 2 );
     }
+
+    /* FOOTER */
+    .hearth,
+    .folder {
+        display: block;
+        padding: 0;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -574,4 +591,5 @@ footer {
         width: calc( 100% / 4 );
         height: 250px;
     }
+
 }
