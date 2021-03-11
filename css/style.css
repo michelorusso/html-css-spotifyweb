@@ -215,6 +215,7 @@ main {
     padding-left: 10px;
 }
 
+/* music-content */
 .music-content {
     display: flex;
 }
@@ -226,24 +227,33 @@ main {
 
 .music-img {
     width: 100%;
+    background-size: cover;
+
     /* Test */
-    height: 162.66px;
+    height: 182.66px;
+
 }
 
 .metal {
     background-image: url(../img/metal_lifting.jpg);
-    background-size: cover;
 }
 
 .overlay {
     width: 100%;
     height: 100%;
     background-color: rgba( 0, 0, 0, 0.5);
+    display: none;
+}
+
+.overlay i {
+    font-size: 30px;
+    color: white;
+}
+.music-img:hover .overlay{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .music h4 {
     color: white;
     font-size: 14px;
