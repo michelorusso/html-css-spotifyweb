@@ -21,6 +21,7 @@ ul {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
 }
 
 .nav a:hover,
@@ -226,7 +227,7 @@ main {
     float: left;
     width: calc( 100% / 6 );
     text-align: center;
-    padding: 0 10px;
+    padding: 15px 10px;
 }
 
 .music-img {
@@ -255,6 +256,7 @@ main {
     color: white;
     font-size: 13px;
     padding: 0 10px;
+    padding-top: 5px;
 }
 
 .music span {
@@ -262,6 +264,18 @@ main {
     padding-top: 5px;
 }
 
+.create{
+    padding-top: 15px;
+}  
+.create p {
+    font-size: 11px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.create .music {
+    width: calc( 100% / 4 );
+}
 
 
 /* FOOTER */
@@ -517,8 +531,10 @@ footer {
         width: calc( 100% - 50px );
     }
 
+  
     /* music-list */
-    .music {
+    .music,
+    .create .music {
         width: calc( 100% / 2 );
     }
 
@@ -535,7 +551,8 @@ footer {
 }
 
 @media (min-width: 553px) and (max-width: 768px) { 
-    .music {
+    .music,
+    .create .music {
         width: calc( 100% / 2 );
     }
 }
@@ -543,5 +560,6 @@ footer {
 @media (min-width: 769px) and (max-width: 992px) {
     .music {
         width: calc( 100% / 4 );
+        height: 250px;
     }
 }
