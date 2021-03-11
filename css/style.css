@@ -217,11 +217,13 @@ main {
 
 /* music-content */
 .music-content {
-    display: flex;
-    padding: 15px 0;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .music {
+    float: left;
     width: calc( 100% / 6 );
     text-align: center;
     padding: 0 10px;
@@ -251,7 +253,7 @@ main {
 }
 .music h4 {
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     padding: 0 10px;
 }
 
@@ -515,6 +517,11 @@ footer {
         width: calc( 100% - 50px );
     }
 
+    /* music-list */
+    .music {
+        width: calc( 100% / 2 );
+    }
+
     /* FOOTER */
     .hearth {
         padding: 0;
@@ -527,6 +534,14 @@ footer {
     }
 }
 
-@media (min-width: 769px) and (max-width: 991px) { 
+@media (min-width: 553px) and (max-width: 768px) { 
+    .music {
+        width: calc( 100% / 2 );
+    }
+}
 
+@media (min-width: 769px) and (max-width: 992px) {
+    .music {
+        width: calc( 100% / 4 );
+    }
 }
