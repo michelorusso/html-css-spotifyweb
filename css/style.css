@@ -354,6 +354,10 @@ footer {
 }
 
 /* center */
+.center {
+    flex-grow: 1;
+}
+
 .time-button {
     display: flex;
     flex-direction: column;
@@ -387,7 +391,9 @@ footer {
 /* time-song */
 .time-container {
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .time {
@@ -398,14 +404,14 @@ footer {
 }
 
 .time-bar {
-    width: 350px;
+    width: 40%;
     height: 4px;
     background-color: #6e6e70;
     border-radius: 50px;
 }
 
 .bar-small {
-    width: 100px;
+    width: 25%;
     height: 100%;
     background-color: #a3a3a3;
     border-radius: 50px;
@@ -565,6 +571,18 @@ footer {
         padding: 0;
     }
     
+    .play li {
+        padding: 0 5px;
+    }
+
+    .right-content a {
+        padding: 0 4px;
+    }
+
+    .right-content .time-bar {
+        width: 80px;
+    }
+
     /* UPGRADE */
     #upgrade {
         width: calc( 100% - 50px );
@@ -583,6 +601,10 @@ footer {
     .folder {
         display: block;
         padding: 0;
+    }
+
+    .play li {
+        padding: 0 5px;
     }
 }
 
